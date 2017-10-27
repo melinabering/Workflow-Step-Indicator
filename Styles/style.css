@@ -1,0 +1,43 @@
+.workflow-step-wizard {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.workflow-step-wizard li {
+  float: left;
+  width: 150px;
+  text-align: center;
+  background: #ccc;
+  height: 3px;
+  position: relative;
+}
+
+.workflow-step-wizard li a {
+  display: inline-block;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  padding: 5px;
+  position: absolute;
+  top: -15px;
+  border: 5px solid white;
+  color: white;
+}
+
+.workflow-step-wizard li a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.workflow-step-wizard li .bg-default {
+  background: #e0e0e0;
+}
+
+.workflow-step-wizard li span {
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+  color: #999;
+}
