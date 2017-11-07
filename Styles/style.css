@@ -1,43 +1,95 @@
 .workflow-step-wizard {
   margin-top: 50px;
-  text-align: center;
-}
+  text-align: center; }
+  .workflow-step-wizard li {
+    float: left;
+    text-align: center;
+    background: #ccc;
+    height: 3px;
+    position: relative; }
+    .workflow-step-wizard li a {
+      display: inline-block;
+      height: 35px;
+      width: 35px;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      padding: 5px;
+      position: absolute;
+      top: -15px;
+      border: 5px solid white;
+      color: white; }
+    .workflow-step-wizard li a:hover {
+      text-decoration: none;
+      color: white; }
+    .workflow-step-wizard li .bg-default {
+      background: #e0e0e0; }
+    .workflow-step-wizard li span {
+      display: block;
+      margin-top: 20px;
+      text-align: center;
+      color: #999;
+      font-size: 12px; }
+    .workflow-step-wizard li ul {
+      position: absolute;
+      top: 50px;
+      width: 100%;
+      background: pink; }
+      .workflow-step-wizard li ul li {
+        height: auto; }
 
-.workflow-step-wizard li {
-  float: left;
-  width: 150px;
-  text-align: center;
-  background: #ccc;
-  height: 3px;
-  position: relative;
-}
+/* FlexBox
+--------------------------------------------------- * /
+.row-flex,
+.row-flex > div[class*=col-] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto; }
 
-.workflow-step-wizard li a {
-  display: inline-block;
-  height: 35px;
-  width: 35px;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  padding: 5px;
-  position: absolute;
-  top: -15px;
-  border: 5px solid white;
-  color: white;
-}
+.row-flex-wrap {
+  -webkit-flex-flow: row wrap;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0;
+  -ms-flex: 0;
+  flex: 0; }
 
-.workflow-step-wizard li a:hover {
-  text-decoration: none;
-  color: white;
-}
+.container-flex > div[class*=col-],
+.row-flex > div[class*=col-] {
+  margin: -0.2px; }
 
-.workflow-step-wizard li .bg-default {
-  background: #e0e0e0;
-}
+.container-flex > div[class*=col-] div,
+.row-flex > div[class*=col-] > div {
+  width: 100%; }
 
-.workflow-step-wizard li span {
-  display: block;
-  margin-top: 20px;
-  text-align: center;
-  color: #999;
-}
+.flex-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: -webkit-flex;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 100%;
+  -ms-flex: 1 100%;
+  flex: 1 100%;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap; }
+
+.flex-grow {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 2;
+  -webkit-box-flex: 2;
+  -ms-flex: 2;
+  flex: 2; }
+
+/* */
